@@ -92,6 +92,7 @@
     <Compile Include="Assets\Sun_Temple\PostProcessing\Editor\Models\DepthOfFieldModelEditor.cs" />
     <Compile Include="Assets\Sun_Temple\PostProcessing\Editor\Models\ChromaticAberrationEditor.cs" />
     <Compile Include="Assets\Sun_Temple\PostProcessing\Editor\Utils\EditorGUIHelper.cs" />
+    <Compile Include="Assets\Flash\WarFX\Editor\CFX_SpawnSystemEditor.cs" />
     <Compile Include="Assets\Sun_Temple\PostProcessing\Editor\Models\DefaultPostFxModelEditor.cs" />
     <Compile Include="Assets\Sun_Temple\PostProcessing\Editor\Attributes\PostProcessingModelEditorAttribute.cs" />
   </ItemGroup>

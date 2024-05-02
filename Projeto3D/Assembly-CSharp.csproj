@@ -72,6 +72,7 @@
     <Compile Include="Assets\Sun_Temple\Scripts\Doors\Door.cs" />
     <Compile Include="Assets\Sun_Temple\PostProcessing\Runtime\Models\EyeAdaptationModel.cs" />
     <Compile Include="Assets\Sun_Temple\PostProcessing\Runtime\Components\ChromaticAberrationComponent.cs" />
+    <Compile Include="Assets\Flash\WarFX\Spawn System\CFX_SpawnSystem.cs" />
     <Compile Include="Assets\Sun_Temple\PostProcessing\Utilities\CustomMotionTexture\ExampleWheelController.cs" />
     <Compile Include="Assets\Sun_Temple\PostProcessing\Runtime\Components\DepthOfFieldComponent.cs" />
     <Compile Include="Assets\Sun_Temple\PostProcessing\Runtime\Components\MotionBlurComponent.cs" />
@@ -82,8 +83,10 @@
     <Compile Include="Assets\Sun_Temple\PostProcessing\Runtime\Models\ScreenSpaceReflectionModel.cs" />
     <Compile Include="Assets\Sun_Temple\Scripts\MoveToLayer.cs" />
     <Compile Include="Assets\Sun_Temple\PostProcessing\Runtime\Utils\ColorGradingCurve.cs" />
+    <Compile Include="Assets\Flash\WarFX\Scripts\CFX_AutoDestructShuriken.cs" />
     <Compile Include="Assets\Sun_Temple\PostProcessing\Runtime\PostProcessingBehaviour.cs" />
     <Compile Include="Assets\Sun_Temple\PostProcessing\Runtime\Components\ColorGradingComponent.cs" />
+    <Compile Include="Assets\Flash\WarFX\Scripts\WFX_LightFlicker.cs" />
     <Compile Include="Assets\Sun_Temple\Scripts\Culling\CullDistances.cs" />
     <Compile Include="Assets\Sun_Temple\PostProcessing\Runtime\Models\ColorGradingModel.cs" />
     <Compile Include="Assets\Sun_Temple\Scripts\Culling\CullDistanceVolume.cs" />
@@ -94,9 +97,13 @@
     <Compile Include="Assets\Sun_Temple\PostProcessing\Runtime\PostProcessingContext.cs" />
     <Compile Include="Assets\Sun_Temple\PostProcessing\Runtime\Models\AntialiasingModel.cs" />
     <Compile Include="Assets\Sun_Temple\PostProcessing\Runtime\Components\ScreenSpaceReflectionComponent.cs" />
+    <Compile Include="Assets\Flash\WarFX\Scripts\CFX_LightIntensityFade.cs" />
+    <Compile Include="Assets\FPS Teste\Scripts\Weapon.cs" />
     <Compile Include="Assets\Sun_Temple\PostProcessing\Runtime\Components\DitheringComponent.cs" />
     <Compile Include="Assets\Sun_Temple\PostProcessing\Runtime\Models\ChromaticAberrationModel.cs" />
+    <Compile Include="Assets\Flash\WarFX\Scripts\WFX_BulletHoleDecal.cs" />
     <Compile Include="Assets\Sun_Temple\PostProcessing\Runtime\Models\BloomModel.cs" />
+    <Compile Include="Assets\FPS Teste\Scripts\PlayerController.cs" />
     <Compile Include="Assets\Sun_Temple\Scripts\Doors\CircularLerp.cs" />
     <Compile Include="Assets\Sun_Temple\PostProcessing\Runtime\Components\BuiltinDebugViewsComponent.cs" />
     <Compile Include="Assets\Sun_Temple\PostProcessing\Runtime\Models\GrainModel.cs" />
@@ -106,6 +113,7 @@
     <Compile Include="Assets\Sun_Temple\PostProcessing\Runtime\Components\BloomComponent.cs" />
     <Compile Include="Assets\Sun_Temple\Scripts\Culling\DistanceHide.cs" />
     <Compile Include="Assets\Sun_Temple\PostProcessing\Runtime\PostProcessingModel.cs" />
+    <Compile Include="Assets\FPS Teste\Scripts\PlayerGravity.cs" />
     <Compile Include="Assets\Sun_Temple\PostProcessing\Runtime\Models\DitheringModel.cs" />
     <Compile Include="Assets\Sun_Temple\PostProcessing\Runtime\Components\TaaComponent.cs" />
     <Compile Include="Assets\Sun_Temple\PostProcessing\Runtime\Models\UserLutModel.cs" />
@@ -123,7 +131,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Sun_Temple\PostProcessing\Resources\Shaders\ScreenSpaceReflection.shader" />
+    <None Include="Assets\Flash\WarFX\Shaders\WFX_S Multiply Soft.shader" />
     <None Include="Assets\Sun_Temple\Content\Shaders\Decal.shader" />
+    <None Include="Assets\Flash\WarFX\Shaders\WFX_S Multiply Soft Scroll.shader" />
     <None Include="Assets\Sun_Temple\PostProcessing\Resources\Shaders\GrainGen.shader" />
     <None Include="Assets\Sun_Temple\PostProcessing\Editor Resources\Monitors\HistogramCompute.compute" />
     <None Include="Assets\Sun_Temple\PostProcessing\Resources\Shaders\FXAA3.cginc" />
@@ -135,19 +145,26 @@
     <None Include="Assets\Sun_Temple\PostProcessing\Resources\Shaders\EyeAdaptation.cginc" />
     <None Include="Assets\Sun_Temple\PostProcessing\Resources\Shaders\LutGen.shader" />
     <None Include="Assets\Sun_Temple\PostProcessing\Resources\Shaders\EyeHistogram.compute" />
+    <None Include="Assets\Flash\WarFX\_Effects\MuzzleFlashes\!MuzzleFlash Differences.txt" />
+    <None Include="Assets\Flash\WarFX\Shaders\WFX_S Alpha-Specular TintColor.shader" />
     <None Include="Assets\Sun_Temple\PostProcessing\Resources\Shaders\TAA.cginc" />
     <None Include="Assets\Sun_Temple\PostProcessing\Resources\Shaders\AmbientOcclusion.cginc" />
+    <None Include="Assets\Flash\WarFX\Shaders\WFX_S Add Scroll.shader" />
     <None Include="Assets\Sun_Temple\PostProcessing\Editor Resources\Monitors\VectorscopeCompute.compute" />
     <None Include="Assets\Sun_Temple\Content\Shaders\VertexWind.cginc" />
     <None Include="Assets\Sun_Temple\Content\Shaders\Mountains.shader" />
     <None Include="Assets\Sun_Temple\PostProcessing\Resources\Shaders\ColorGrading.cginc" />
+    <None Include="Assets\Flash\WarFX\Shaders\WFX_S Particle Add A8.shader" />
     <None Include="Assets\Sun_Temple\PostProcessing\Editor Resources\Monitors\HistogramRender.shader" />
     <None Include="Assets\Sun_Temple\PostProcessing\Resources\Shaders\UberSecondPass.cginc" />
+    <None Include="Assets\Flash\WarFX\Shaders\WFX_S Smoke Scroll.shader" />
+    <None Include="Assets\Flash\WarFX\Shaders\WFX_S Particle Multiply A8.shader" />
     <None Include="Assets\Sun_Temple\PostProcessing\Resources\Bluenoise64\LICENSE.txt" />
     <None Include="Assets\Sun_Temple\Content\Shaders\Foliage.shader" />
     <None Include="Assets\Sun_Temple\PostProcessing\Resources\Shaders\ACES.cginc" />
     <None Include="Assets\Sun_Temple\PostProcessing\Resources\Shaders\MotionBlur.cginc" />
     <None Include="Assets\Sun_Temple\PostProcessing\Resources\Shaders\AmbientOcclusion.shader" />
+    <None Include="Assets\Flash\WarFX\Shaders\WFX_S AlphaBlend Scroll.shader" />
     <None Include="Assets\Sun_Temple\PostProcessing\Resources\Shaders\FXAA.shader" />
     <None Include="Assets\Sun_Temple\Readme.txt" />
     <None Include="Assets\Sun_Temple\PostProcessing\Resources\Shaders\ScreenSpaceRaytrace.cginc" />
@@ -168,12 +185,15 @@
     <None Include="Assets\Sun_Temple\PostProcessing\Resources\Shaders\Uber.shader" />
     <None Include="Assets\Sun_Temple\PostProcessing\Resources\Shaders\DepthOfField.shader" />
     <None Include="Assets\Sun_Temple\PostProcessing\Resources\Shaders\TAA.shader" />
+    <None Include="Assets\Flash\WarFX\Shaders\WFX_S Particle AddSoft A8.shader" />
     <None Include="Assets\Sun_Temple\PostProcessing\Resources\Shaders\Blit.shader" />
     <None Include="Assets\Sun_Temple\PostProcessing\Resources\Shaders\Bloom.cginc" />
     <None Include="Assets\Sun_Temple\Content\Shaders\Decal_Puddle.shader" />
     <None Include="Assets\Sun_Temple\PostProcessing\Editor Resources\Monitors\WaveformCompute.compute" />
     <None Include="Assets\Sun_Temple\PostProcessing\Resources\Shaders\DepthOfField.cginc" />
+    <None Include="Assets\Flash\WarFX\Shaders\WFX_S Alpha-Diffuse TintColor.shader" />
     <None Include="Assets\Sun_Temple\Content\Shaders\Skybox_Rotating.shader" />
+    <None Include="Assets\Flash\WarFX\Shaders\WFX_S AlphaBlend NoSoftParticles.shader" />
     <None Include="Assets\Sun_Temple\Resources\TerrainShaders\Details\WavingGrass.shader" />
   </ItemGroup>
   <ItemGroup>
