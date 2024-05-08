@@ -166,6 +166,7 @@
     <None Include="Assets\Sun_Temple\PostProcessing\Resources\Shaders\AmbientOcclusion.shader" />
     <None Include="Assets\Flash\WarFX\Shaders\WFX_S AlphaBlend Scroll.shader" />
     <None Include="Assets\Sun_Temple\PostProcessing\Resources\Shaders\FXAA.shader" />
+    <None Include="Assets\klen\Shaders\VegetationPBRBase.shader" />
     <None Include="Assets\Sun_Temple\Readme.txt" />
     <None Include="Assets\Sun_Temple\PostProcessing\Resources\Shaders\ScreenSpaceRaytrace.cginc" />
     <None Include="Assets\Sun_Temple\PostProcessing\Resources\Shaders\Tonemapping.cginc" />
